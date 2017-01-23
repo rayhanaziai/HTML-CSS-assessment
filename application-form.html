@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <link rel ="stylesheet" href="./styles.css">
+    <title>Application Form</title>
+</head>
+<body>
+    <h1>Application Form</h1>
+    <div class="instruction">
+        <h3>This is an application form to help you find a job! Please fill out your details below.</h3>
+    </div>
+<form action = "/application-success" method="POST">
+    First Name :<input type= "text" name="first-name"><br><br>
+    <label for="last-name">Last Name :</label>
+    <input id="last-name" type= "text" name="last-name"><br><br>
+    Salary Requirement :<input type= "text" name="salary_requiremment"><br><br>
+    Which job are you applying for? <br><br>
+    <input type="radio" name="job" value="Software Engineer">Software Engineer<br>
+    <input type="radio" name="job" value="QA Engineer">QA Engineer<br><input type="radio" name="job" value="Product Manager">Product Manager<br><br>
+    <input type="submit">
+
+</form>
+</body>
+</html>
